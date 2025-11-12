@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import App from './app.js';
+import App from './app';
 import './index.less';
 
 //热更新实现
@@ -18,7 +18,7 @@ render(App);
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
-    module.hot.accept('./app.js', () => {
+    module.hot.accept('./app', () => {
         render(App);
     })
 }
